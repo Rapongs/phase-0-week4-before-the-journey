@@ -12,10 +12,12 @@ Karena attack akan dikurangi 2, maka setiap attack akan menghasilkan damage 8
 
 function attack (damage) {
   // Code disini
+  return damage - 2
 }
 
 function damageCalculation (numberOfAttacks, damagePerAttack) {
   // Code disini
+  return numberOfAttacks * attack(damagePerAttack);
 }
 
 // TEST CASE
